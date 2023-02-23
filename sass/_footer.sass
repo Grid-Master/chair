@@ -1,0 +1,145 @@
+.footer__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    ul
+        display: flex
+        align-items: center
+        li
+            position: relative
+            :not(last-child)
+                margin-right: 20px
+                cursor: pointer
+            &:nth-child(1)::after
+                content: url('../images/youtube.png')
+                position: absolute
+                right: 51.5px
+                top: 14.5px
+            &:nth-child(2)::after
+                content: url('../images/vk.png')
+                position: absolute
+                right: 48px
+                top: 16px
+            &:nth-child(3)::after
+                content: url('../images/facebook.png')
+                position: absolute
+                right: 53px
+                top: 12px
+            &:nth-child(4)::after
+                content: url('../images/instagram.png')
+                position: absolute
+                left: 11.5px
+                bottom: 12px
+
+    .footer__info
+        display: flex
+        align-items: center
+        button
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            color: #000000
+            cursor: pointer
+            padding: 12px 26px
+            border: 2px solid #66C05D
+            border-radius: 40px
+            background-color: #FFFFFF
+            margin: 40px 0
+            margin-left: 40px
+            transition: .3s
+            &:hover
+                background-color: #66C05D
+                color: #FFFFFF
+        a
+            text-decoration: none
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+            margin-left: 105px
+        p
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            color: #000000
+
+.footer__politic
+    background-color: #EFEFEF
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 14px
+    color: #828282
+    .container
+        padding: 25px 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+@media (max-width: 1260px)
+    .footer__inner
+        flex-direction: column
+        ul
+            margin-top: 10px
+        .footer__info
+            button
+                margin: 10px 0
+                margin-left: 20px
+                font-size: 12px
+            a
+                font-size: 14px
+            p
+                font-size: 12px
+    .footer__politic
+        .container
+            flex-direction: column
+            h6:first-child
+                margin-bottom: 10px
+@media (max-width:860px)
+    .footer__inner
+        flex-direction: column
+        ul
+            transform: translateX(20px)
+            li
+            :not(:last-child)
+                margin-right: 10px
+                img,a
+                    margin-right: 0!important
+                &:nth-child(1)::after
+                    right: 11.5px
+                    top: 14.5px
+                &:nth-child(2)::after
+                    right: 8px
+                    top: 16px
+                &:nth-child(3)::after
+                    right: 13px
+                    top: 12px
+                &:nth-child(4)::after
+                    left: 11.5px
+                    bottom: 12px
+        .footer__info
+            flex-direction: column
+            align-items: center
+            text-align: center
+            margin-top: 15px
+            button
+                margin: 0
+                font-size: 10px
+                margin-bottom: 20px
+            a
+                font-size: 12px
+                margin: 0
+                margin-bottom: 10px
+            p
+                font-size: 10px
+                margin-bottom: 10px
+    .footer__politic
+        .container
+            flex-direction: column
+            text-align: center
+            padding: 15px 0
+            h6:first-child
+                margin-bottom: 15px

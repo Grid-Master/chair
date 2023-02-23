@@ -1,0 +1,38 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./main.css');
+@import url('./offers.css');
+@import url('./footer.css');
+
+body {
+  font-family: Roboto;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: Roboto;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+@media (max-width:1260px) {
+  .container {
+      max-width: 825px;
+  }
+}
+
+@media (max-width:860px) {
+  .container {
+      max-width: 540px;
+  }
+}
+
+@media (max-width:600px) {
+  .container {
+      max-width: 360px;
+  }
+}
